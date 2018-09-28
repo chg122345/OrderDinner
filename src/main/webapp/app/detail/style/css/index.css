@@ -1,0 +1,310 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0px;
+	padding:0px;
+	font-size:19px;
+}
+li{
+	list-style:none;
+}
+#log,#all{
+	width:1024px;
+	height:768px;
+	margin:0 auto;
+	
+}
+#all{
+	background:url(img/menubg.gif) no-repeat;
+	padding-top:90px;
+}
+#menu{
+	
+	width:775px;
+	height:555px;
+	margin-top:14px;
+	margin-left:13px;
+	float:left;
+}
+#top{
+	width:775px;
+	height:477px;
+	
+}
+#top ul li{
+	list-style:none;
+	float:left;
+	width:253px;
+	height:225px;
+	background:url(img/bg2.gif) no-repeat;
+	margin-left:3px;
+	margin-top:8px;
+	text-align:center;
+	padding-top:5px;
+	
+}
+#top img{
+	border:0px;
+	width:214px;
+	height:145px;
+}
+#top a{
+	text-decoration:none;
+}
+.f1{
+	letter-spacing:1em;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:10px;
+}
+.f2{
+	/*letter-spacing:1em;*/
+	margin-top:10px;
+}
+#foot{
+	width:668px;
+	height:42px;
+	background:url(img/rotation_bg.png);
+	margin-left:10px;
+	margin-top:30px;
+	padding-left:70px;
+	
+}
+#btn{
+	width:360px;
+	float:left;
+	
+}
+#btn li{
+	list-style:none;
+	float:left;
+}
+#btn a{
+	text-decoration:none;
+	display:block;
+	width:39px;
+	height:25px;
+	margin-top:8px;
+	text-align:center;
+	padding-top:4px;
+	color:#FFF;
+	font-size:24px;
+	font-family:"Courier New", Courier, monospace;
+	
+}
+#btn a:hover{
+	background:url(img/circle.gif);
+}
+#num{
+	width:200px;
+	float:left;
+}
+#num input{
+	border:0px;
+	width:70px;
+	margin-top:13px;
+	text-align:center;
+	margin-right:10px;
+}
+#num a{
+	color:#000;
+	letter-spacing:1em;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:24px;
+}
+#dish_class{
+	float:right;
+	width:204px;
+	height:570px;
+	position:relative;
+}
+#dish_top{
+	height:100px;
+}
+#dish_top li{
+	list-style:none;
+	float:right;
+}
+#dish_top img{
+	border:0px;
+}
+.dish_num{
+	background:url(img/btn2.gif);
+	width:55px;
+	height:39px;
+	text-align:center;
+	font-size:24px;
+	padding-top:10px;
+}
+#dish_2{
+	/*margin-top:95px;*/
+}
+#dish_2 a{
+	text-decoration:none;
+	font-size:36px;
+	color:#000;
+}
+#dish_2 li{
+	background:url(img/btndish.gif);
+	width:164px;
+	height:47px;
+	text-align:center;
+	padding-top:5px;
+}
+#dish_3{
+	margin-top:30px;
+	vertical-align:bottom;
+	height:210px;
+	position:absolute;
+	top:320px;
+}
+#dish_3 img{
+	border:0px;
+}
+.select_value{
+	width:166px;
+	background:url(img/right_input.gif);
+	height:32px;
+	border:0px;
+	padding-left:10px;
+	padding-top:5px;
+}
+#dish_3 tr{
+	height:60px;
+}
+/*count页面的样式*/
+#count{
+	width:750px;
+	padding-left:20px;
+	font-size:36px;
+	padding-top:18px;
+}
+#count input{
+	margin-left:10px;
+}
+
+/*claa_dish页面*/
+.day li{
+	float:left;
+	list-style:none;
+	background:url(img/order_bg.png);
+	width:253px;
+	height:206px;
+	margin-left:1px;
+	margin-top:15px;
+}
+#space{
+	width:775px;
+	height:60px;
+	
+	float:left;
+}
+.menu_next{
+	width:775px;
+	float:left;
+	text-align:center;
+}
+.menu_next a{
+	margin:0 auto;
+}
+.day li p{
+	font-size:14px;
+	padding-top:10px;
+	padding-left:53px;
+	margin-bottom:15px;
+}
+.day li img{
+	margin-left:15px;
+	border:0;
+}
+
+
+
+/*menu*/
+#count a{
+	width:163px;
+	height:40px;
+	background:url(img/btn_Bg.png);
+	display:block;
+	float:left;
+	color:#000;
+	font-size:24px;
+	text-align:center;
+	padding-top:10px;
+	text-decoration:none;
+	margin-left:12px;
+	font-weight:bold;
+}
+.btn_next{
+	width:163px;
+	height:50px;
+	background:url(img/btn_Bg.png);
+	display:block;
+	float:left;
+	color:#000;
+	font-size:24px;
+	text-align:center;
+	padding-top:10px;
+	text-decoration:none;
+	margin-left:12px;
+	font-weight:bold;
+	border:0px;
+	float:right;
+}
+/*dish_message*/
+#dish_f1{
+	
+	width:737px;
+	height:581px;
+	padding-left:15px;
+	
+	margin-top:10px;
+}
+#dish_f1 img{
+	width:269px;
+	height:291px;
+}
+#dish_f1 table td{
+	font-size:36px;
+	
+}
+#menu1{
+	width:775px;
+	height:580px;
+	float:left;
+	background:url(img/dish_circle.gif) no-repeat 2px 3px;
+}
+#dish_f1  .dish_btn{
+ background:url(img/order_left_corner_bg.png); 
+ width:372px;
+ height:101px; 
+ border:0px;
+}
+#dish_f1 a{
+	display:block;
+	width:372px; 
+	height:71px;
+	font-size:36px; 
+	text-decoration:none;
+	text-align:center;
+	color:#000; 
+	padding-top:30px;
+	
+}
+.down{
+	height:55px;
+}
+#sub{
+	background:url(img/select.gif);
+	width:132px;
+	height:27px;
+	border:0px;
+
+}
+
+
+	
+
+
+	

@@ -1,0 +1,155 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body {
+	padding: 0;
+	margin: 0;
+	}
+body,html{
+	height: 100%;
+	} 
+#log_index{
+	width:1024px;
+	height: 100%;
+	margin:0 auto;
+}
+.log_top{
+	width:1024px;
+	height:90px;
+	background:url(img/flower.gif) no-repeat;
+}
+#log_middle{
+	width:1024px;
+	background:url(img/middle_bg.gif);
+	height:442px;
+	padding-top:140px;
+	overflow:hidden;
+}
+#log_midcenter{
+	width:1024px;
+	height:300px;
+}
+.middle_1{
+	float:left;
+	width:90px;
+	height:584px;
+	padding-top:40px;
+	
+}
+
+.middle_2{
+	width:510px;
+	float:left;
+	height:292px;
+	padding-left:167px;	
+}
+.middle_5{
+	width:90px;
+	height:584px;
+	float:left;
+}
+
+#middle_3{
+	width:90px;
+	height:584px;
+	float:right;
+	padding-top:40px;
+}
+#food_table{
+	padding-left:167px;
+}
+#food_table ul{
+	width:510px;
+	margin:0 auto;
+	background:#F00;
+	
+}
+#food_table ul  li{
+	list-style:none;
+	float:left;
+	margin-right:5px;
+}
+#food_table a{
+	display:block;
+	width:90px;
+	height:60px;
+	background:url(img/table.gif) no-repeat;
+	padding-left:35px;
+	font-size:36px;
+	text-decoration:none;
+	color:#83230a;
+}
+
+
+/**/
+.bg_1{
+	width:1024px;
+	height:90px;
+	background:url(img/flower.gif) no-repeat;
+}
+#space{
+	width:1024px;
+	height:150px;
+	
+}
+.bg_left{
+	width:113px;
+	height:300px;
+	background:url(img/middle_left.gif) no-repeat left center; 
+	float:left;
+}
+.bg_middle{
+	width:813px;
+	height:300px; 
+	text-align:center;
+	float:left
+}
+.index_all{
+	width:1024px;
+	margin:0 auto;
+}
+#index_center{
+	width:1024px; 
+	background:url(img/middle_bg.gif);
+}
+#index_centerleft{
+	width:113px;
+	height:300px;
+	background:url(img/middle_left.gif) no-repeat left center;
+	float:left;
+}
+
+#index_centerright{
+	width:98px; 
+	height:300px; 
+	background:url(img/middle_left2.gif) no-repeat right center; 
+	float:left 
+}
+#center_bottom{
+	width:1000px; 
+	height:100px;
+	clear:both;
+	display:table-cell; 
+	text-align:center;
+	padding-top:10px;
+}
+#center_bottom ul{
+ 	list-style:none;
+ 	text-align:center; 
+}
+#center_bottom ul li{
+	float: left;
+	background:url(img/table.gif);
+	width: 88px; 
+	height:60px; 
+	margin-left:10px;
+	text-align:center; 
+	font-weight:bold;
+}
+#center_bottom a{
+	text-decoration:none;
+	color:#83230a;
+	text-align:center; 
+	font-weight:bold;
+	font-size:30px; 
+}
+
