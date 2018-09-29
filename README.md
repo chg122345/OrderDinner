@@ -5,7 +5,7 @@
 * 技术实现
     * [x] 基于Servlet 3.1标准改造
         * `Spring MVC`风格化
-            1. 使用注解`@Controller`注解标记
+            1. 使用`@Controller`注解标记
             2. 请求映射方法自定义 `@RequestMapping(value = "",method = Method.POST)`(默认允许所有请求方法)
             3. 自动初始化方法内参数(复杂类型自动匹配字段名赋值)
             4. 支持返回json数据，只需标注`@RenderJson`注解即可
