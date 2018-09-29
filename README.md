@@ -1,6 +1,7 @@
-<h2>jleopard-mvc
+# jleopard-mvc
 ---
-###Servlet极速开发脚手架
+# Servlet极速开发脚手架
+
 * 技术实现
     * [x] 基于Servlet 3.1标准改造
         * `Spring MVC`风格化
