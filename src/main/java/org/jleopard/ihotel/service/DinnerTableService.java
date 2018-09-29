@@ -1,6 +1,7 @@
 package org.jleopard.ihotel.service;
 
 import org.jleopard.ihotel.core.annotation.Bean;
+import org.jleopard.ihotel.core.annotation.Inject;
 import org.jleopard.ihotel.dao.DinnerTableDao;
 import org.jleopard.ihotel.entity.DinnerTable;
 
@@ -12,7 +13,8 @@ import java.util.List;
 public class DinnerTableService {
 
 
-    DinnerTableDao dao = new DinnerTableDao();
+    @Inject
+    private DinnerTableDao dao ;
 
     public void add(DinnerTable dt) {
         dao.insert(dt);

@@ -1,6 +1,7 @@
 package org.jleopard.ihotel.service;
 
 import org.jleopard.ihotel.core.annotation.Bean;
+import org.jleopard.ihotel.core.annotation.Inject;
 import org.jleopard.ihotel.dao.FoodTypeDao;
 import org.jleopard.ihotel.entity.FoodType;
 
@@ -11,7 +12,8 @@ import java.util.List;
 public class FoodTypeService {
 
 
-    FoodTypeDao dao = new FoodTypeDao();
+    @Inject
+    private FoodTypeDao dao;
 
     public int add(FoodType foodType) {
         return dao.insert(foodType);

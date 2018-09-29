@@ -12,12 +12,11 @@ package test;
 import org.jleopard.ihotel.dao.FoodDao;
 import org.jleopard.ihotel.entity.Food;
 import org.jleopard.ihotel.entity.FoodType;
-import org.jleopard.ihotel.util.BeanUtil;
 
 public class FoodDaoTest {
 
     public static void main(String[] args) {
-        FoodDao dao = BeanUtil.getInstance(FoodDao.class);
+        FoodDao dao = new FoodDao();
         FoodType foodType = new FoodType();
         foodType.setId(2);
         Food food = new Food(3,"HHHFF",5.6,5.5,"","",foodType);

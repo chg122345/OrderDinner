@@ -2,6 +2,7 @@ package org.jleopard.ihotel.service;
 
 
 import org.jleopard.ihotel.core.annotation.Bean;
+import org.jleopard.ihotel.core.annotation.Inject;
 import org.jleopard.ihotel.dao.FoodDao;
 import org.jleopard.ihotel.entity.Food;
 import org.jleopard.ihotel.entity.FoodType;
@@ -12,8 +13,8 @@ import java.util.List;
 @Bean
 public class FoodService {
 
-
-    FoodDao dao = new FoodDao();
+    @Inject
+    private FoodDao dao;
 
     public int delete(Integer id) {
         return dao.deleteById(id);

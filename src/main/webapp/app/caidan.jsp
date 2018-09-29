@@ -138,7 +138,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td><input type="submit" id="sub" value="搜索" /></td>
+							<td><input type="submit" id="sub" value=" " /></td>
 						</tr>
 						<tr>
 							<td>
@@ -148,6 +148,7 @@
 							</td>
 						</tr>
 					</table>
+			</div>
 				</form>
 			</div>
 		</div>

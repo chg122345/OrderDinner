@@ -15,6 +15,8 @@ package org.jleopard.ihotel.config;
  */
 public interface DemoConfigConstant {
 
+    String BASE_PACKAGE = "org.jleopard.ihotel";
+
     String CONTROLLER_PACKAGE = "org.jleopard.ihotel.controller";
 
     String ENTITY_PACKAGE = "org.jleopard.ihotel.entity";

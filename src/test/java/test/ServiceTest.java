@@ -12,12 +12,11 @@ package test;
 import org.jleopard.ihotel.entity.Food;
 import org.jleopard.ihotel.entity.FoodType;
 import org.jleopard.ihotel.service.FoodService;
-import org.jleopard.ihotel.util.BeanUtil;
 
 public class ServiceTest {
 
     public static void main(String[] args) {
-        FoodService dao = BeanUtil.getInstance(FoodService.class);
+        FoodService dao = new FoodService();
         FoodType foodType = new FoodType();
         foodType.setId(2);
         Food food = new Food(3,"HHHFF",5.6,5.5,"","",foodType);

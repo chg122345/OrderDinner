@@ -1,6 +1,7 @@
 package org.jleopard.ihotel.service;
 
 import org.jleopard.ihotel.core.annotation.Bean;
+import org.jleopard.ihotel.core.annotation.Inject;
 import org.jleopard.ihotel.dao.OrderDetialDao;
 import org.jleopard.ihotel.entity.OrderDetail;
 
@@ -9,7 +10,9 @@ import java.util.List;
 
 @Bean
 public class OrderDetailService {
-	OrderDetialDao dao= new OrderDetialDao();
+
+	@Inject
+	private OrderDetialDao dao;
 
 	public int add(OrderDetail od) {
 		return dao.insert(od);

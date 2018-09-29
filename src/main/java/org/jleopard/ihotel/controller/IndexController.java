@@ -10,6 +10,7 @@
 package org.jleopard.ihotel.controller;
 
 import org.jleopard.ihotel.core.annotation.Controller;
+import org.jleopard.ihotel.core.annotation.Inject;
 import org.jleopard.ihotel.core.annotation.RequestMapping;
 import org.jleopard.ihotel.entity.DinnerTable;
 import org.jleopard.ihotel.entity.FoodType;
@@ -26,14 +27,17 @@ import java.util.List;
 @Controller
 public class IndexController {
 
-    DinnerTableService tableService = new DinnerTableService();
+    @Inject
+    private DinnerTableService tableService;
 
-    FoodTypeService foodTypeService =new FoodTypeService();
+    @Inject
+    private FoodTypeService foodTypeService;
 
-    FoodService foodService = new FoodService();
+    @Inject
+    private FoodService foodService;
 
     @RequestMapping({"/","/index"})
-    public String index(HttpServletRequest request, HttpServletResponse response){
+    public String index(HttpServletRequest request){
             HttpSession session =request.getSession();
             Object obj =session.getAttribute("table_id");
             String table_id =request.getParameter("table_id");
@@ -49,7 +53,7 @@ public class IndexController {
     }
 
     @RequestMapping("/caidan")
-    public String menu(HttpServletRequest request, HttpServletResponse response){
+    public String menu(HttpServletRequest request){
         List<FoodType> foodtypes =foodTypeService.query();
         request.setAttribute("listFoodType", foodtypes);
         PageInfo all = foodService.getAll(1, 6);
@@ -58,7 +62,7 @@ public class IndexController {
     }
 
     @RequestMapping({"/add","del"})
-    public String add(HttpServletRequest request, HttpServletResponse response){
+    public String add(){
         return "redirect:/index";
     }
 }

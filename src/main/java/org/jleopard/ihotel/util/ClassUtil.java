@@ -10,12 +10,14 @@
 package org.jleopard.ihotel.util;
 
 import org.jleopard.ihotel.core.annotation.Controller;
+import org.jleopard.util.DateUtil;
 import org.jleopard.util.PathUtils;
 import org.jleopard.util.StringUtil;
 
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.net.JarURLConnection;
 import java.net.URL;
 import java.util.Enumeration;
@@ -65,12 +67,12 @@ public class ClassUtil {
         return cls;
     }
 
-    public static Set<Class<?>> scanPackage(String packagename){
-        Set<Class<?>> scls=new HashSet<>();
-        if(StringUtil.isEmpty(packagename)){
-            String packagePath=System.getProperty("user.dir")+ PathUtils.SEPARATOR+"src";
+    public static Set<Class<?>> scanPackage(String packagename) {
+        Set<Class<?>> scls = new HashSet<>();
+        if (StringUtil.isEmpty(packagename)) {
+            String packagePath = System.getProperty("user.dir") + PathUtils.SEPARATOR + "src";
             addClass(scls, packagePath, packagename);
-        }else {
+        } else {
             URL url = getClassLoader().getResource(packagename.replace(".", "/"));
 
             if (url != null) {
@@ -105,7 +107,7 @@ public class ClassUtil {
     }
 
     private static void doAddClass(Set<Class<?>> scls, String classname) {
-        Class<?> cls=loadClass(classname, false);
+        Class<?> cls = loadClass(classname, false);
         /*// 有controller注解加进去
         if (cls.isAnnotationPresent(Controller.class)){
             scls.add(cls);
@@ -114,33 +116,57 @@ public class ClassUtil {
     }
 
     private static void addClass(Set<Class<?>> scls, String packagePath, String packagename) {
-        File[] files=new File(packagePath).listFiles(new FileFilter() {
+        File[] files = new File(packagePath).listFiles(new FileFilter() {
 
             @Override
             public boolean accept(File file) {
 
-                return (file.isFile()&&file.getName().endsWith(".class"))||file.isDirectory();
+                return (file.isFile() && file.getName().endsWith(".class")) || file.isDirectory();
             }
         });
-        for(File file:files) {
-            String fname=file.getName();
-            if(file.isFile()) {
-                String classname=fname.substring(0, fname.lastIndexOf("."));
-                if(StringUtil.isNotEmpty(packagename)) {
-                    classname=packagename+"."+classname;
+        for (File file : files) {
+            String fname = file.getName();
+            if (file.isFile()) {
+                String classname = fname.substring(0, fname.lastIndexOf("."));
+                if (StringUtil.isNotEmpty(packagename)) {
+                    classname = packagename + "." + classname;
                 }
-                doAddClass(scls,classname);
-            }else {
-                String subpackagepath=fname;
-                if(StringUtil.isNotEmpty(subpackagepath)) {
-                    subpackagepath=packagePath+"/"+subpackagepath;
+                doAddClass(scls, classname);
+            } else {
+                String subpackagepath = fname;
+                if (StringUtil.isNotEmpty(subpackagepath)) {
+                    subpackagepath = packagePath + "/" + subpackagepath;
                 }
-                String subpackagename=fname;
-                if(StringUtil.isNotEmpty(subpackagename)) {
-                    subpackagename=packagename+"."+subpackagename;
+                String subpackagename = fname;
+                if (StringUtil.isNotEmpty(subpackagename)) {
+                    subpackagename = packagename + "." + subpackagename;
                 }
-                addClass(scls,subpackagepath,subpackagename);
+                addClass(scls, subpackagepath, subpackagename);
             }
         }
+    }
+
+    public static Object changeType(Field field, String str) {
+        Object result = str;
+        Class<?> type = field.getType();
+        if (type == Long.class || type == long.class) {
+            result = Long.valueOf(str);
+        } else if (type == Integer.class || type == int.class) {
+            result = Integer.valueOf(str);
+        } else if (type == Byte.class || type == byte.class) {
+            result = Byte.valueOf(str);
+        } else if (type == Double.class || type == double.class) {
+            result = Double.valueOf(str);
+        } else if (type == Float.class || type == float.class) {
+            result = Float.valueOf(str);
+        } else if (type == java.util.Date.class) {
+            result = DateUtil.parseDatetime(str);
+        } else if (type == java.sql.Date.class) {
+            result = java.sql.Date.valueOf(str);
+        } else if (type == java.sql.Timestamp.class) {
+            result = java.sql.Timestamp.valueOf(str);
+        }
+
+        return result;
     }
 }

@@ -1,0 +1,8 @@
+POST http://localhost:8088/table1?id=200&tableName=jleopard
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-09-29T125344.200.json
+
+###
+
