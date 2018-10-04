@@ -3,7 +3,18 @@
 # Servlet极速开发脚手架
 
 * 技术实现
-    * [x] 基于Servlet 3.1标准改造
+    * [x] Jleopard-MVC 基于Servlet 3.1标准改造
+        * 开始使用(在web.xml配置Servlet映射)
+        ```xml
+         <servlet>
+            <servlet-name>dispatcherServlet</servlet-name>
+            <servlet-class>org.jleopard.mvc.servlet.DispatcherServlet</servlet-class>
+          </servlet>
+          <servlet-mapping>
+            <servlet-name>dispatcherServlet</servlet-name>
+            <url-pattern>/</url-pattern>
+          </servlet-mapping>
+        ```
         * `Spring MVC`风格化
             1. 使用`@Controller`注解标记
             2. 请求映射方法自定义 `@RequestMapping(value = "",method = Method.POST)`(默认允许所有请求方法)
@@ -66,12 +77,11 @@
     -org.jleopard.ihotel
         -config  项目基础配置，数据库信息配置
         -controller Controller类
-        -core 实现Spring MVC风格核心注解等
         -dao 数据持久层
         -entity 实体类
         -filter 过滤器
         -service 业务逻辑层
         -util 工具包
-        -DispatcherServlet 最最最核心Servlet
+        -App 基础配置类
     ```
     
