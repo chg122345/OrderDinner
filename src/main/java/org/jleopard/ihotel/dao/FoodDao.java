@@ -10,15 +10,15 @@
 package org.jleopard.ihotel.dao;
 
 import org.jleopard.exception.SqlSessionException;
-import org.jleopard.ihotel.core.annotation.Bean;
 import org.jleopard.ihotel.entity.Food;
 import org.jleopard.ihotel.entity.FoodType;
+import org.jleopard.mvc.core.annotation.Component;
 import org.jleopard.pageHelper.PageInfo;
 import org.jleopard.session.SqlSession;
 
 import java.util.List;
 
-@Bean
+@Component
 public class FoodDao extends BaseDao<Food> {
 
     public int deleteById(Integer id){
@@ -53,7 +53,7 @@ public class FoodDao extends BaseDao<Food> {
     public PageInfo selectToPage(int page,int pageSize){
         SqlSession session = sessionFactory.openSession();
         try {
-            PageInfo res = session.getJoinToPage(Food.class,new Class[]{FoodType.class},page,pageSize,"where 1 = 1","");
+            PageInfo res = session.getJoinToPage(Food.class,new Class[]{FoodType.class},page,pageSize,"","");
             session.close();
             return res;
         } catch (SqlSessionException e) {

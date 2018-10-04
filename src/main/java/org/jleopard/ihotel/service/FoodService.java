@@ -1,16 +1,16 @@
 package org.jleopard.ihotel.service;
 
 
-import org.jleopard.ihotel.core.annotation.Bean;
-import org.jleopard.ihotel.core.annotation.Inject;
 import org.jleopard.ihotel.dao.FoodDao;
 import org.jleopard.ihotel.entity.Food;
 import org.jleopard.ihotel.entity.FoodType;
+import org.jleopard.mvc.core.annotation.Inject;
+import org.jleopard.mvc.core.annotation.Service;
 import org.jleopard.pageHelper.PageInfo;
 
 import java.util.List;
 
-@Bean
+@Service
 public class FoodService {
 
     @Inject

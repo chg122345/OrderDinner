@@ -10,13 +10,13 @@
 package org.jleopard.ihotel.dao;
 
 import org.jleopard.exception.SqlSessionException;
-import org.jleopard.ihotel.core.annotation.Bean;
 import org.jleopard.ihotel.entity.DinnerTable;
+import org.jleopard.mvc.core.annotation.Component;
 import org.jleopard.session.SqlSession;
 
 import java.util.List;
 
-@Bean
+@Component
 public class DinnerTableDao extends BaseDao<DinnerTable> {
 
     public int deleteById(Integer id){

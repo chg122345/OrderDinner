@@ -10,13 +10,13 @@
 package org.jleopard.ihotel.dao;
 
 import org.jleopard.exception.SqlSessionException;
-import org.jleopard.ihotel.core.annotation.Bean;
 import org.jleopard.ihotel.entity.DinnerTable;
 import org.jleopard.ihotel.entity.Orders;
+import org.jleopard.mvc.core.annotation.Component;
 import org.jleopard.pageHelper.PageInfo;
 import org.jleopard.session.SqlSession;
 
-@Bean
+@Component
 public class OrdersDao extends BaseDao<Orders> {
 
     public PageInfo selectToPage(int page, int pageSize){

@@ -9,9 +9,9 @@
 
 package org.jleopard.ihotel.config;
 
-import org.jleopard.ihotel.DispatcherServlet;
 import org.jleopard.ihotel.filter.BrowserFilter;
 import org.jleopard.ihotel.filter.EncodingFilter;
+import org.jleopard.mvc.servlet.DispatcherServlet;
 
 import javax.servlet.*;
 import javax.servlet.annotation.HandlesTypes;

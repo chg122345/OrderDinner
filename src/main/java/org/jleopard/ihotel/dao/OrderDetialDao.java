@@ -10,13 +10,13 @@
 package org.jleopard.ihotel.dao;
 
 import org.jleopard.exception.SqlSessionException;
-import org.jleopard.ihotel.core.annotation.Bean;
 import org.jleopard.ihotel.entity.OrderDetail;
+import org.jleopard.mvc.core.annotation.Component;
 import org.jleopard.session.SqlSession;
 
 import java.util.List;
 
-@Bean
+@Component
 public class OrderDetialDao extends BaseDao<OrderDetail> {
 
     public List<OrderDetail> select(){

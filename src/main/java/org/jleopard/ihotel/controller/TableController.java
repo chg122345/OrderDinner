@@ -9,11 +9,11 @@
 
 package org.jleopard.ihotel.controller;
 
-import org.jleopard.ihotel.core.annotation.Controller;
-import org.jleopard.ihotel.core.annotation.Inject;
-import org.jleopard.ihotel.core.annotation.RenderJson;
-import org.jleopard.ihotel.core.annotation.RequestMapping;
-import org.jleopard.ihotel.core.ienum.Method;
+import org.jleopard.mvc.core.annotation.Controller;
+import org.jleopard.mvc.core.annotation.Inject;
+import org.jleopard.mvc.core.annotation.RenderJson;
+import org.jleopard.mvc.core.annotation.RequestMapping;
+import org.jleopard.mvc.core.ienum.Method;
 import org.jleopard.ihotel.entity.DinnerTable;
 import org.jleopard.ihotel.service.DinnerTableService;
 

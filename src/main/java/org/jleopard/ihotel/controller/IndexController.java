@@ -9,18 +9,17 @@
 
 package org.jleopard.ihotel.controller;
 
-import org.jleopard.ihotel.core.annotation.Controller;
-import org.jleopard.ihotel.core.annotation.Inject;
-import org.jleopard.ihotel.core.annotation.RequestMapping;
+import org.jleopard.mvc.core.annotation.Controller;
+import org.jleopard.mvc.core.annotation.RequestMapping;
 import org.jleopard.ihotel.entity.DinnerTable;
 import org.jleopard.ihotel.entity.FoodType;
 import org.jleopard.ihotel.service.DinnerTableService;
 import org.jleopard.ihotel.service.FoodService;
 import org.jleopard.ihotel.service.FoodTypeService;
+import org.jleopard.mvc.core.annotation.Inject;
 import org.jleopard.pageHelper.PageInfo;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
