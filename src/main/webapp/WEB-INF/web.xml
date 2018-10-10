@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>hotel</display-name>
+  <servlet-mapping>
+    <servlet-name>default</servlet-name>
+    <url-pattern>*.gif</url-pattern>
+    <url-pattern>*.jpg</url-pattern>
+    <url-pattern>*.png</url-pattern>
+    <url-pattern>*.js</url-pattern>
+    <url-pattern>*.css</url-pattern>
+  </servlet-mapping>
   <servlet>
     <servlet-name>dispatcherServlet</servlet-name>
     <servlet-class>org.jleopard.mvc.servlet.DispatcherServlet</servlet-class>
@@ -9,26 +17,4 @@
     <servlet-name>dispatcherServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
-  
-  <servlet-mapping>
-    <servlet-name>default</servlet-name>
-    <url-pattern>*.jpg</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>default</servlet-name>
-    <url-pattern>*.gif</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>default</servlet-name>
-    <url-pattern>*.png</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>default</servlet-name>
-    <url-pattern>*.js</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>default</servlet-name>
-    <url-pattern>*.css</url-pattern>
-  </servlet-mapping>
-
 </web-app>

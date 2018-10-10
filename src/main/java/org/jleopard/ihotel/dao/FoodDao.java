@@ -13,13 +13,18 @@ import org.jleopard.exception.SqlSessionException;
 import org.jleopard.ihotel.entity.Food;
 import org.jleopard.ihotel.entity.FoodType;
 import org.jleopard.mvc.core.annotation.Component;
+import org.jleopard.mvc.core.annotation.Inject;
 import org.jleopard.pageHelper.PageInfo;
 import org.jleopard.session.SqlSession;
+import org.jleopard.session.sessionFactory.SqlSessionFactory;
 
 import java.util.List;
 
 @Component
 public class FoodDao extends BaseDao<Food> {
+
+    @Inject
+    private SqlSessionFactory sessionFactory;
 
     public int deleteById(Integer id){
         SqlSession session = sessionFactory.openSession();
@@ -29,11 +34,7 @@ public class FoodDao extends BaseDao<Food> {
             session.close();
             return temp;
         } catch (SqlSessionException e) {
-            try {
-                session.rollback();
-            } catch (SqlSessionException e1) {
-                e1.printStackTrace();
-            }
+            session.rollback();
         }
         return -1;
     }
@@ -53,7 +54,7 @@ public class FoodDao extends BaseDao<Food> {
     public PageInfo selectToPage(int page,int pageSize){
         SqlSession session = sessionFactory.openSession();
         try {
-            PageInfo res = session.getJoinToPage(Food.class,new Class[]{FoodType.class},page,pageSize,"","");
+            PageInfo res = session.getJoinToPage(Food.class,new Class[]{FoodType.class},page,pageSize,"",null);
             session.close();
             return res;
         } catch (SqlSessionException e) {

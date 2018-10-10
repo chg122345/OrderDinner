@@ -10,16 +10,16 @@
 package org.jleopard.ihotel.dao;
 
 import org.jleopard.exception.SqlSessionException;
-import org.jleopard.ihotel.util.JleopardUtil;
+import org.jleopard.mvc.context.BeanContextUtil;
 import org.jleopard.session.SqlSession;
 import org.jleopard.session.sessionFactory.SqlSessionFactory;
 
 import java.io.Serializable;
 import java.util.List;
 
-public class BaseDao<T> {
+public abstract class BaseDao<T> {
 
-    protected SqlSessionFactory sessionFactory = JleopardUtil.getSessionFactory();
+    private SqlSessionFactory sessionFactory = (SqlSessionFactory) BeanContextUtil.getBeanByName("sqlSessionFactory");
 
     public int insert (T t){
         SqlSession session = sessionFactory.openSession();
@@ -29,11 +29,8 @@ public class BaseDao<T> {
             session.close();
             return temp;
         } catch (SqlSessionException e) {
-            try {
-                session.rollback();
-            } catch (SqlSessionException e1) {
-                e1.printStackTrace();
-            }
+            e.printStackTrace();
+            session.rollback();
         }
         return -1;
     }
@@ -46,11 +43,8 @@ public class BaseDao<T> {
             session.close();
             return temp;
         } catch (SqlSessionException e) {
-            try {
-                session.rollback();
-            } catch (SqlSessionException e1) {
-                e1.printStackTrace();
-            }
+            e.printStackTrace();
+            session.rollback();
         }
         return -1;
     }
@@ -63,11 +57,8 @@ public class BaseDao<T> {
             session.close();
             return temp;
         } catch (SqlSessionException e) {
-            try {
-                session.rollback();
-            } catch (SqlSessionException e1) {
-                e1.printStackTrace();
-            }
+            e.printStackTrace();
+            session.rollback();
         }
         return -1;
     }
@@ -80,11 +71,8 @@ public class BaseDao<T> {
             session.close();
             return temp;
         } catch (SqlSessionException e) {
-            try {
-                session.rollback();
-            } catch (SqlSessionException e1) {
-                e1.printStackTrace();
-            }
+            e.printStackTrace();
+            session.rollback();
         }
         return -1;
     }

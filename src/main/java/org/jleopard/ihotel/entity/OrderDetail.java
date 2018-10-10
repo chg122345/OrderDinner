@@ -18,6 +18,6 @@ public class OrderDetail {
     @Column(join = Orders.class)
     private Orders orderid;
 
-    @Column(join = Food.class)
-    private Food food_id;
+    @Column(value = "food_id",join = Food.class)
+    private Food food;
 }

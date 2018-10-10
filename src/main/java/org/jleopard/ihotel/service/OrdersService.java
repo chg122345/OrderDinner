@@ -36,4 +36,7 @@ public class OrdersService {
 		return dao.selectToPage(page,pageSize);
 	}
 
+	public List<Orders> query(Orders orders) {
+		return dao.select(orders);
+	}
 }

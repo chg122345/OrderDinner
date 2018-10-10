@@ -1,26 +1,36 @@
 ﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/app/detail/style/css/index.css" />
+	<script type="text/javascript" src="${pageContext.request.contextPath }/app/detail/style/js/jquery.js"></script>
 	<script type="text/javascript">
-		/** // 删除菜品项
+		 // 删除菜品项
 		function removeSorder(node) {
-			var gid = node.lang;
-			window.location.href = "/wirelessplatform/sorder.html?method=removeSorder&gid="+gid;
+			var cartId = node.lang;
+			$.ajax({
+				url:'${pageContext.request.contextPath }/delete',
+				data:{id :cartId},
+				success:function (res) {
+					alert(res);
+					window.location.reload();
+                }
+			});
 		}
-		
-		// 修改菜品项数量
-		function alterSorder(node) {
-			var snumber = node.value;
-			var gid = node.lang;
-			window.location.href = "/wirelessplatform/sorder.html?method=alterSorder&gid="+gid+"&snumber="+snumber;
-		}
-		*/
 		// 下单
 		function genernateOrder() {
-			window.location.href = "${pageContext.request.contextPath }/app/clientOrderList.jsp";
+			window.location.href = "${pageContext.request.contextPath }/order";
 		}
+
+         $(document).ready(function(){
+             var a = parseFloat(0.0);
+             $('.total').each(function(){
+                 var to = parseFloat($(this).html());
+                 a += to;
+             });
+             $('#allTotal').text('￥ '+a);
+		 });
 	</script>
 </head>
 
@@ -29,7 +39,7 @@
 		<div id="menu">
 			<!-- 餐车div -->
 			<div id="count">
-				<table align="center" width="100%">
+				<table align="center" width="100%" id="foods">
 					<tr height="40">
 				 		<td align="center" width="20%">菜名</td>
 				 		<td align="center" width="20%">单价</td>
@@ -37,21 +47,21 @@
 				 		<td align="center" width="20%">小计</td>
 				 		<td align="center" width="20%">操作</td>
 				 	</tr>
+					<c:forEach items="${sessionScope.carts}" var="cart">
+
 					<tr height="60">
-					 		<td align="center" width="20%">烤乳猪</td>
-					 		<td align="center" width="20%">￥68.0</td>
+					 		<td align="center" width="20%">${cart.food.foodName}</td>
+					 		<td align="center" width="20%">￥${cart.food.price}</td>
+					 		<td align="center" width="20%">${cart.number}</td>
+					 		<td align="center" width="20%" class="total">${cart.total}</td>
 					 		<td align="center" width="20%">
-					 			<input type="text" value="1" size="3" lang="3" onblur="alterSorder(this)"/>
-					 		</td>
-					 		<td align="center" width="20%">68.0</td>
-					 		<td align="center" width="20%">
-					 			<input type="button" value="删除" class="btn_next" lang="3" onclick="removeSorder(this)" />
+					 			<input type="button" value="删除" class="btn_next" lang="${cart.targetId}" onclick="removeSorder(this)" />
 					 		</td>
 				 	</tr>
-
+					</c:forEach>
 					<tr>
 						<td colspan="6" align="right">总计:
-							<span style="font-size:36px;">&yen;&nbsp;68.0</span>
+							<span style="font-size:36px;" id="allTotal"></span>
 							<label
 								id="counter" style="font-size:36px"></label>
 						</td>
@@ -59,12 +69,7 @@
 					<tr>
 						<td colspan="6" style="margin-left: 100px; text-align: center;"align="right">
 							<input type="hidden" name="bId" value="">
-							
-								
-								
 									<input type="button" value="下单" class="btn_next" onclick="genernateOrder()" />
-								
-							
 						</td>
 					</tr>
 				</table>
@@ -120,7 +125,7 @@
 						</tr>
 						<tr>
 							<td>
-								<a href="#">
+								<a href="${pageContext.request.contextPath }/look">
 									<img src="${pageContext.request.contextPath }/app/detail/style/images/look.gif" />
 								</a>
 							</td>

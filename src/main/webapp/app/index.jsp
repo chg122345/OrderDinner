@@ -60,7 +60,7 @@
 						src="${pageContext.request.contextPath }/app/detail/style/images/index_menu.gif"
 						border="0" usemap="#Map" />
 					<map name="Map" id="Map">
-						<area shape="rect" coords="164,99,354,199" href="/caidan" />
+						<area shape="rect" coords="164,99,354,199" href="#" />
 					</map>
 				</div>
 				<!--中间层的右边-->
@@ -75,7 +75,7 @@
 					   <c:when test="${not empty requestScope.table}">
 					     <c:forEach var="dt" items="${requestScope.table}">
 					      <li>
-							<a href="${pageContext.request.contextPath }/00.jsp">
+							<a href="${pageContext.request.contextPath }/caidan?id=${dt.id}">
 								${dt.tableName }
 							</a>
 						</li>

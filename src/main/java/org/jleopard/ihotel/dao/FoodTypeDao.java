@@ -12,12 +12,17 @@ package org.jleopard.ihotel.dao;
 import org.jleopard.exception.SqlSessionException;
 import org.jleopard.ihotel.entity.FoodType;
 import org.jleopard.mvc.core.annotation.Component;
+import org.jleopard.mvc.core.annotation.Inject;
 import org.jleopard.session.SqlSession;
+import org.jleopard.session.sessionFactory.SqlSessionFactory;
 
 import java.util.List;
 
 @Component
 public class FoodTypeDao extends BaseDao<FoodType> {
+
+    @Inject
+    private SqlSessionFactory sessionFactory;
 
     public int deleteById(Integer id){
         SqlSession session = sessionFactory.openSession();
@@ -27,11 +32,7 @@ public class FoodTypeDao extends BaseDao<FoodType> {
             session.close();
             return temp;
         } catch (SqlSessionException e) {
-            try {
-                session.rollback();
-            } catch (SqlSessionException e1) {
-                e1.printStackTrace();
-            }
+            session.rollback();
         }
         return -1;
     }

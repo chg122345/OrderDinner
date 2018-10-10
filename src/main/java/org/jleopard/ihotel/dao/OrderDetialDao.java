@@ -12,12 +12,17 @@ package org.jleopard.ihotel.dao;
 import org.jleopard.exception.SqlSessionException;
 import org.jleopard.ihotel.entity.OrderDetail;
 import org.jleopard.mvc.core.annotation.Component;
+import org.jleopard.mvc.core.annotation.Inject;
 import org.jleopard.session.SqlSession;
+import org.jleopard.session.sessionFactory.SqlSessionFactory;
 
 import java.util.List;
 
 @Component
 public class OrderDetialDao extends BaseDao<OrderDetail> {
+
+    @Inject
+    private SqlSessionFactory sessionFactory;
 
     public List<OrderDetail> select(){
         SqlSession session = sessionFactory.openSession();

@@ -13,11 +13,16 @@ import org.jleopard.exception.SqlSessionException;
 import org.jleopard.ihotel.entity.DinnerTable;
 import org.jleopard.ihotel.entity.Orders;
 import org.jleopard.mvc.core.annotation.Component;
+import org.jleopard.mvc.core.annotation.Inject;
 import org.jleopard.pageHelper.PageInfo;
 import org.jleopard.session.SqlSession;
+import org.jleopard.session.sessionFactory.SqlSessionFactory;
 
 @Component
 public class OrdersDao extends BaseDao<Orders> {
+
+    @Inject
+    private SqlSessionFactory sessionFactory;
 
     public PageInfo selectToPage(int page, int pageSize){
         SqlSession session = sessionFactory.openSession();

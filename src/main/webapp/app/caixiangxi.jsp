@@ -28,15 +28,15 @@
 						style="width:270px; height:290px;" />
 				</div>
 				<div class="menu3_right">
-					<p>菜名:白灼虾</p>
-					<p>价格:&nbsp;&nbsp;&yen;&nbsp;36.0</p>
-					<p>简介:粤菜白灼虾，大件！</p>
+					<p>菜名:${requestScope.food.foodName}</p>
+					<p>价格:&nbsp;&nbsp;&yen;&nbsp;${requestScope.food.price}</p>
+					<p>简介:${requestScope.food.remark}</p>
 				</div>
 			</div>
 			<div class="menu4">
 				
-				<a href="${pageContext.request.contextPath }/app/clientCart.jsp" style="background:url(${pageContext.request.contextPath }/app/detail/style/images/img/order_left_corner_bg.png);">放入餐车</a>
-				<a href="#" onclick="javascript:history.go(-1);" style="background:url(${pageContext.request.contextPath }/app/detail/style/images/img/order_right_corner_bg.png);">返回</a>
+				<a id="subCart" lang="${requestScope.food.id}" href="#" onclick="subCart(this)" style="background:url(${pageContext.request.contextPath }/app/detail/style/images/img/order_left_corner_bg.png);">放入餐车</a>
+				<a href="#" onclick="javascript:history.go(-1);" style="background:url(${pageContext.request.contextPath }/app/detail/style/images/img/order_left_corner_bg.png);">返回</a>
 			</div>
 		</div>
 		
@@ -89,7 +89,7 @@
 						</tr>
 						<tr>
 							<td>
-								<a href="#">
+                                <a href="${pageContext.request.contextPath }/look">
 									<img src="${pageContext.request.contextPath }/app/detail/style/images/look.gif" />
 								</a>
 							</td>
@@ -99,5 +99,18 @@
 			</div>
 		</div>
 	</div>
+<script>
+    function subCart(node){
+        var id = node.lang;
+        $.ajax({
+			url: "${pageContext.request.contextPath }/clientCart",
+			data:{id :id},
+			success: function (res) {
+				alert(res);
+            }
+		});
+
+	}
+</script>
 </body>
 </html>

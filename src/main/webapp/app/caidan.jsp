@@ -43,7 +43,7 @@
 						<li>
 							<dl>
 								<dt>
-									<a href="${pageContext.request.contextPath }/app/caixiangxi.jsp">
+									<a href="${pageContext.request.contextPath }/caixiangxi?id=${food.id}">
 										<img width="214px" height="145px" src="${pageContext.request.contextPath }/app/detail/style/images/baizhuoxia.jpg" />
 									</a>
 								</dt>
@@ -51,7 +51,7 @@
 									<a href="#">${food.foodName }</a>
 								</dd>
 								<dd class="f2">
-									<a href="${pageContext.request.contextPath }/app/caixiangxi.jsp">&yen;${food.price }</a>
+									<a href="${pageContext.request.contextPath }/caixiangxi?id=${food.id}">&yen;${food.price }</a>
 								</dd>
 							</dl>
 						</li>
@@ -142,7 +142,7 @@
 						</tr>
 						<tr>
 							<td>
-								<a href="#">
+								<a href="${pageContext.request.contextPath }/look">
 									<img src="${pageContext.request.contextPath }/app/detail/style/images/look.gif" />
 								</a>
 							</td>

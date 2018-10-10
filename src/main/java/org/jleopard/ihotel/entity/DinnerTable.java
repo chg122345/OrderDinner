@@ -1,6 +1,6 @@
 package org.jleopard.ihotel.entity;
 
-import lombok.Data;
+import lombok.*;
 import org.jleopard.core.EnumId;
 import org.jleopard.core.annotation.Column;
 import org.jleopard.core.annotation.Table;
@@ -8,7 +8,10 @@ import org.jleopard.core.annotation.Table;
 import java.io.Serializable;
 import java.util.Date;
 
-@Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @Table
 public class DinnerTable implements Serializable {
 
@@ -25,4 +28,8 @@ public class DinnerTable implements Serializable {
 
 	@Column
 	private Date orderDate;
+
+	public DinnerTable(Integer id) {
+		this.id = id;
+	}
 }

@@ -6,7 +6,33 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="463ec7e5-cda6-466c-9d46-df3def69cbfa" name="Default Changelist" comment="" />
+    <list default="true" id="463ec7e5-cda6-466c-9d46-df3def69cbfa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/filter/TInter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/upload.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/TableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/TableController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/BaseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/DinnerTableDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/DinnerTableDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/FoodDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/FoodDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/FoodTypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/FoodTypeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/OrderDetialDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/OrderDetialDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/OrdersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/OrdersDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/DinnerTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/DinnerTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/OrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/OrderDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/OrdersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/OrdersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/caidan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/caidan.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/caixiangxi.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/caixiangxi.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/clientCart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/clientCart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/clientOrderList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/clientOrderList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/jiezhang.jsp" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
@@ -34,101 +60,78 @@
     <session id="1359707219">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="16" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.2" value="5" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.53" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="33" />
+          <entry key="class" value="88" />
           <entry key="css" value="2" />
-          <entry key="gif" value="1" />
-          <entry key="java" value="367" />
-          <entry key="js" value="1" />
-          <entry key="jsp" value="14" />
-          <entry key="md" value="3" />
+          <entry key="gif" value="2" />
+          <entry key="java" value="430" />
+          <entry key="js" value="2" />
+          <entry key="jsp" value="34" />
+          <entry key="md" value="4" />
+          <entry key="png" value="11" />
           <entry key="pom" value="1" />
           <entry key="properties" value="1" />
-          <entry key="xml" value="19" />
+          <entry key="ts" value="1" />
+          <entry key="xml" value="28" />
           <entry key="xsd" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="33" />
+          <entry key="CLASS" value="88" />
           <entry key="CSS" value="2" />
-          <entry key="Image" value="1" />
-          <entry key="JAVA" value="367" />
-          <entry key="JSP" value="14" />
-          <entry key="JavaScript" value="1" />
-          <entry key="Markdown" value="3" />
+          <entry key="Image" value="13" />
+          <entry key="JAVA" value="430" />
+          <entry key="JSP" value="34" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Markdown" value="4" />
           <entry key="Properties" value="1" />
-          <entry key="XML" value="21" />
+          <entry key="TypeScript" value="1" />
+          <entry key="XML" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="class" value="1" />
+          <entry key="class" value="4" />
           <entry key="dummy" value="64" />
-          <entry key="java" value="7498" />
-          <entry key="jsp" value="34" />
-          <entry key="md" value="940" />
-          <entry key="txt" value="11" />
-          <entry key="xml" value="123" />
+          <entry key="java" value="9187" />
+          <entry key="jsp" value="817" />
+          <entry key="md" value="1017" />
+          <entry key="txt" value="22" />
+          <entry key="xml" value="128" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="7498" />
-          <entry key="JSP" value="34" />
-          <entry key="Markdown" value="940" />
-          <entry key="PLAIN_TEXT" value="75" />
-          <entry key="XML" value="123" />
+          <entry key="CLASS" value="4" />
+          <entry key="JAVA" value="9187" />
+          <entry key="JSP" value="817" />
+          <entry key="Markdown" value="1017" />
+          <entry key="PLAIN_TEXT" value="86" />
+          <entry key="XML" value="128" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/IndexController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/OrdersDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/OrderDetailService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,6 +139,7 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="AnnotationType" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -146,6 +150,7 @@
       <find>toJSON</find>
       <find>String</find>
       <find>size</find>
+      <find>value</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,57 +159,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/annotation/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/util/WebUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/BaseServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/filter/EncodingFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/filter/DispatcherFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/filter/BrowserFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/annotation/RequestMapping.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/util/JsonUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/annotation/RenderJson.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/bean/MappingInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/DinnerTable.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/config/DemoConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/util/JleopardUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/DinnerDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/core/annotation/Bean.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/core/bean/BeanInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/Food.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/OrderDetail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/Orders.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/FoodType.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/core/annotation/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/util/BeanUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/core/annotation/Inject.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/config/DemoConfigConstant.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/FoodDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/ServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/app/caidan.jsp" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/util/ClassUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/DispatcherServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/DemoServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/TableController.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/JSPViewResolver.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/test/ClassPathTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/config/AppInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/DinnerTableDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/FoodDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/FoodTypeDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/OrderDetialDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/OrdersDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/OrdersService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/DinnerTableService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/FoodService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/FoodTypeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/OrderDetailService.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/webapp/upload.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/OrderDetialDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/OrdersDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/DinnerTableDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/filter/TInter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/FoodDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/FoodTypeDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/TableController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/caidan.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/Cart.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/caixiangxi.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/clientCart.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/OrdersService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/DinnerTable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/OrderDetail.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/Orders.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/jiezhang.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/app/clientOrderList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/IndexController.java" />
       </list>
     </option>
   </component>
@@ -241,6 +246,11 @@
           <item name="IHotel Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="IHotel Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -271,6 +281,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,8 +294,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,6 +324,114 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8088" />
+          <option name="urlPath" value="/table1" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="tableName" />
+                <option name="value" value="6号" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="tableStatus" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8088" />
+          <option name="urlPath" value="/table1" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="6" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="tableName" />
+                <option name="value" value="6号" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="tableStatus" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8088" />
+          <option name="urlPath" value="/table1" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="id" />
+                <option name="value" value="200" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="tableName" />
+                <option name="value" value="jleopard" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="tableStatus" />
+                <option name="value" value="0" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:8088" />
@@ -510,17 +628,25 @@
       <workItem from="1538565794707" duration="37000" />
       <workItem from="1538565857555" duration="4524000" />
       <workItem from="1538621881490" duration="4450000" />
-      <workItem from="1538660622840" duration="4171000" />
+      <workItem from="1538660622840" duration="4684000" />
+      <workItem from="1538718208198" duration="2476000" />
+      <workItem from="1538809000114" duration="6469000" />
+      <workItem from="1538971900448" duration="8103000" />
+      <workItem from="1538989448818" duration="12779000" />
+      <workItem from="1539006662246" duration="640000" />
+      <workItem from="1539050750090" duration="10642000" />
+      <workItem from="1539152693562" duration="4551000" />
+      <workItem from="1539159778808" duration="8771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77073000" />
+    <option name="totallyTimeSpent" value="132017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="26" width="1863" height="1054" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6400778" visible="true" weight="0.27407816" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6400778" visible="true" weight="0.30049533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.35992217" side_tool="true" weight="0.3458702" />
       <window_info id="Designer" order="3" />
@@ -528,19 +654,19 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286638" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978448" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49917448" visible="true" weight="0.45689654" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49972484" weight="0.39978448" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3297414" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49972484" weight="0.3286638" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008255" side_tool="true" weight="0.45689654" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.3286638" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32903227" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="REST Client" order="14" weight="0.33512932" />
+      <window_info anchor="bottom" id="REST Client" order="14" sideWeight="0.49972484" weight="0.33512932" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -548,7 +674,7 @@
       <window_info anchor="right" id="Database" order="4" weight="0.3296643" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="SciView" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32911393" />
+      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.27517888" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,392 +687,424 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard-mvc/1.0.0/jleopard-mvc-1.0.0.jar!/org/jleopard/mvc/servlet/DispatcherServlet.class</url>
-          <line>65</line>
+          <url>jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard-mvc/1.0.0/jleopard-mvc-1.0.0.jar!/org/jleopard/mvc/util/MethodUtil.class</url>
+          <line>27</line>
           <properties />
-          <option name="timeStamp" value="46" />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.2/jleopard-2.2.2.jar!/org/jleopard/session/sessionFactory/DevModelHelper.class</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.2/jleopard-2.2.2.jar!/org/jleopard/core/util/FieldUtil.class</url>
+          <line>85</line>
+          <properties />
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.2/jleopard-2.2.2.jar!/org/jleopard/session/sessionFactory/SessionDirectImpl.class</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/core/bean/MappingInfo.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/javassist/javassist/3.23.1-GA/javassist-3.23.1-GA.jar!/javassist/CtBehavior.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="176">
+          <caret line="96" column="15" selection-start-line="96" selection-start-column="15" selection-end-line="96" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/FoodDaoTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard-mvc/1.0.0/jleopard-mvc-1.0.0.jar!/org/jleopard/mvc/util/MethodUtil.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="646">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/index.jsp">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.2/jleopard-2.2.2.jar!/org/jleopard/session/sessionFactory/SqlSessionFactory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="62" column="84" lean-forward="true" selection-start-line="62" selection-start-column="84" selection-end-line="62" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/detail/style/css/img/select.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/detail/style/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="298" column="28" selection-start-line="298" selection-start-column="28" selection-end-line="298" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/caidan.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2380">
-          <caret line="140" column="72" lean-forward="true" selection-start-line="140" selection-start-column="72" selection-end-line="140" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///opt/jdk1.8.0_172/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2165">
-          <caret line="1554" column="19" selection-start-line="1554" selection-start-column="19" selection-end-line="1554" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.0/jleopard-2.2.0-sources.jar!/org/jleopard/session/sessionFactory/InvokeTypeHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.0/jleopard-2.2.0-sources.jar!/org/jleopard/session/sessionFactory/EntityHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="173" column="87" lean-forward="true" selection-start-line="173" selection-start-column="87" selection-end-line="173" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/DinnerTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.0/jleopard-2.2.0-sources.jar!/org/jleopard/util/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="95" selection-start-line="95" selection-end-line="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-803">
-            <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/BaseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard-mvc/1.0.0/jleopard-mvc-1.0.0.jar!/org/jleopard/mvc/core/annotation/Controller.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard-mvc/1.0.0/jleopard-mvc-1.0.0.jar!/org/jleopard/mvc/core/annotation/Component.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.0/jleopard-2.2.0-sources.jar!/org/jleopard/util/ClassUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="70" column="12" lean-forward="true" selection-start-line="70" selection-start-column="12" selection-end-line="71" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard-mvc/1.0.0/jleopard-mvc-1.0.0.jar!/org/jleopard/mvc/core/annotation/Inject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard-mvc/1.0.0/jleopard-mvc-1.0.0.jar!/org/jleopard/mvc/view/View.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/DemoServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/JSPViewResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/web-common_3_1.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="130" column="41" lean-forward="true" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/Orders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.1/jleopard-2.2.1.pom">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.1/jleopard-2.2.1-sources.jar!/org/jleopard/session/sessionFactory/SessionDirectImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="601" selection-start-line="601" selection-end-line="601" />
+        <state relative-caret-position="205">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/util/JleopardUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.1/jleopard-2.2.1-sources.jar!/org/jleopard/util/ClassUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/ServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/ClassPathTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.1/jleopard-2.2.1.jar!/org/jleopard/util/ClassUtil.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard-mvc/1.0.0/jleopard-mvc-1.0.0.jar!/org/jleopard/mvc/servlet/DispatcherServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="53" lean-forward="true" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.1/jleopard-2.2.1.jar!/org/jleopard/session/sessionFactory/SessionDirectImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="466" column="36" lean-forward="true" selection-start-line="466" selection-start-column="36" selection-end-line="466" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.1/jleopard-2.2.1.jar!/org/jleopard/session/SqlSession.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="187" column="43" lean-forward="true" selection-start-line="187" selection-start-column="43" selection-end-line="187" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/config/AppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="30" column="110" selection-start-line="30" selection-start-column="93" selection-end-line="30" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/config/DemoConfigConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/util/ClassUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/App.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/TableController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/DinnerTableDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/FoodDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/FoodTypeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/OrderDetialDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/OrdersService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/DinnerTableService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="48" column="51" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/FoodService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1309#1310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/FoodTypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <caret line="25" column="72" lean-forward="true" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/OrdersDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        <state relative-caret-position="340">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/OrderDetailService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/OrderDetialDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        <state relative-caret-position="170">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
         </state>
       </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard-mvc/1.0.0/jleopard-mvc-1.0.0.jar!/org/jleopard/mvc/core/ApplicationInitializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.2/jleopard-2.2.2.jar!/org/jleopard/util/ArrayUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.2/jleopard-2.2.2.jar!/org/jleopard/session/sessionFactory/DevModelHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/jdk1.8.0_172/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="71" column="40" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/jdk1.8.0_172/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.2/jleopard-2.2.2.jar!/org/jleopard/core/sql/InsertSql.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.2/jleopard-2.2.2.jar!/org/jleopard/core/util/FieldUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="98" column="63" selection-start-line="98" selection-start-column="63" selection-end-line="98" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.2/jleopard-2.2.2.jar!/org/jleopard/session/sessionFactory/SessionDirectImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.2/jleopard-2.2.2.jar!/org/jleopard/session/SqlSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="84" column="23" lean-forward="true" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/DinnerTableDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/FoodService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#1254#1255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/filter/TInter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/config/AppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="30" column="110" selection-start-line="30" selection-start-column="93" selection-end-line="30" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard-mvc/1.0.0/jleopard-mvc-1.0.0.jar!/org/jleopard/mvc/view/jsp/JSPViewResolver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/FoodTypeDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="34" column="31" lean-forward="true" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/FoodDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard-mvc/1.0.0/jleopard-mvc-1.0.0.jar!/org/jleopard/mvc/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="57" column="34" lean-forward="true" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard-mvc/1.0.0/jleopard-mvc-1.0.0.jar!/org/jleopard/mvc/view/jsp/JSPView.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="214" selection-start-line="214" selection-end-line="214" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/TableController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/Food.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/detail/style/images/img/middle_left2.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/detail/style/images/img/order_left_corner_bg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/detail/style/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="16925" column="12" selection-start-line="16925" selection-start-column="12" selection-end-line="16925" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/caidan.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="144" column="83" lean-forward="true" selection-start-line="144" selection-start-column="32" selection-end-line="144" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#790#791#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
+            <element signature="e#926#927#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/OrdersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#726#727#0" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.16.22/lombok-1.16.22.jar!/lombok/Data.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/DinnerTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.2/jleopard-2.2.2-sources.jar!/org/jleopard/core/annotation/OneToMany.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/DinnerTableService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="56" column="21" lean-forward="true" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+          <folding>
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/clientCart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jleopard/jleopard/2.2.2/jleopard-2.2.2-sources.jar!/org/jleopard/core/annotation/Column.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/caixiangxi.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="86" column="28" lean-forward="true" selection-start-line="86" selection-start-column="28" selection-end-line="86" selection-end-column="28" />
+          <folding>
+            <element signature="e#1511#1517#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/OrderDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="62" column="78" lean-forward="true" selection-start-line="62" selection-start-column="78" selection-end-line="62" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/jiezhang.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/Orders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/clientOrderList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="56" column="30" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/chuancai.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
