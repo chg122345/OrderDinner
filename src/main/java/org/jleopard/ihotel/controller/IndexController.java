@@ -19,6 +19,7 @@ import org.jleopard.mvc.upload.MultipartFile;
 import org.jleopard.pageHelper.PageInfo;
 import org.jleopard.util.CollectionUtil;
 import org.jleopard.util.FileUtil;
+import org.jleopard.util.StringUtil;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -174,6 +175,18 @@ public class IndexController {
         session.removeAttribute("carts");
         session.setAttribute("order",orders);
         return PREFIX_PATH + "clientOrderList";
+    }
+
+    @RequestMapping(value = "/search" ,method = Method.POST)
+    public String search(HttpServletRequest request, @RequestParam("foodName") String name){
+        if (StringUtil.isNotEmpty(name)){
+            PageInfo all = foodService.getAll(1, 6,"food.foodName like ?","%"+name+"%");
+            request.setAttribute("pb", all);
+        }else {
+            PageInfo all = foodService.getAll(1, 6,null,null);
+            request.setAttribute("pb", all);
+        }
+        return PREFIX_PATH + "caidan";
     }
 
     @RequestMapping(value = "/upload",method = Method.POST)

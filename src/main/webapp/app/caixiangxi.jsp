@@ -47,7 +47,8 @@
 				<ul>
 				<li class="dish_num"></li>
 					<li>
-						<a href="${pageContext.request.contextPath }/order">
+						<%--<a href="${pageContext.request.contextPath }/order">--%>
+						<a href="#">
 							<img src="${pageContext.request.contextPath }/app/detail/style/images/call2.gif" />
 						</a>
 					</li>

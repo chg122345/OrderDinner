@@ -97,7 +97,7 @@
         </div>
         <div id="dish_3">
             <!-- 搜索菜品表单  -->
-            <form action="/wirelessplatform/food.html" method="post">
+            <form action="${pageContext.request.contextPath }/search" method="post">
                 <table width="166px">
                     <tr>
                         <td>

@@ -91,7 +91,7 @@
                 </li>
             </ul>
         </div>
-        <form action="${pageContext.request.contextPath }/food?method=foodDetail" method="post">
+        <form action="${pageContext.request.contextPath }/search" method="post">
 
             <div id="dish_2">
                 <ul>
@@ -113,7 +113,6 @@
                     <tr>
                         <td>
                             <input type="text" id="dish_name" name="foodName" class="select_value"/>
-                            <%--<input type="hidden" value="selectFood" name="method">--%>
                         </td>
                     </tr>
                     <tr>

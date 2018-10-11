@@ -89,7 +89,8 @@
             <ul>
                 <li class="dish_num"></li>
                 <li>
-                    <a href="${pageContext.request.contextPath }/order">
+                    <%--<a href="${pageContext.request.contextPath }/order">--%>
+                    <a href="#">
                         <img src="${pageContext.request.contextPath }/app/detail/style/images/call2.gif"/>
                     </a>
                 </li>
@@ -110,7 +111,7 @@
         </div>
         <div id="dish_3">
             <!-- 搜索菜品表单  -->
-            <form action="#" method="post">
+            <form action="${pageContext.request.contextPath }/search" method="post">
                 <table width="166px">
                     <tr>
                         <td>

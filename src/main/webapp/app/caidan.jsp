@@ -86,13 +86,14 @@
             <ul>
                 <li class="dish_num"></li>
                 <li>
-                    <a href="${pageContext.request.contextPath }/order">
+                   <%-- <a href="${pageContext.request.contextPath }/order">--%>
+                    <a href="#">
                         <img src="${pageContext.request.contextPath }/app/detail/style/images/call2.gif"/>
                     </a>
                 </li>
             </ul>
         </div>
-        <form action="${pageContext.request.contextPath }/food?method=foodDetail" method="post">
+        <form action="${pageContext.request.contextPath }/search" method="post">
 
             <div id="dish_2">
                 <ul>
