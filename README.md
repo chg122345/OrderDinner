@@ -88,27 +88,27 @@
 ### 运行效果图
 * [x] 首页
 
-![](doc/Screenshot from 2018-10-11 14-35-21.png)
+![](doc/shouye.png)
 
 * [x] 点击小桌子进入菜单页
 
-![](doc/Screenshot from 2018-10-11 14-37-20.png)
-![](doc/Screenshot from 2018-10-11 14-58-10.png)
+![](doc/caidan01.png)
+![](doc/caidan02.png)
 
 * [x] 右侧的搜索框(搜索菜名)
 
-![](doc/Screenshot from 2018-10-11 14-58-31.png)
+![](doc/sousuo.png)
 
 * [x] 点击图片进入详情页(选择加入餐车)
 
-![](doc/Screenshot from 2018-10-11 14-37-30.png)
+![](doc/canche.png)
 
 * [x] 点击右下角查看菜单可以看到已点的菜
 
-![](doc/Screenshot from 2018-10-11 14-38-54.png)
+![](doc/cart.png)
 
 * [x] 点击下单进入到订单页
 
-![](doc/Screenshot from 2018-10-11 14-38-26.png)
+![](doc/order.png)
 
 * [x] 点击结账(流程结束)
