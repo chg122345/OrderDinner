@@ -4,7 +4,6 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-    <!-- 包含公共的JSP代码片段 -->
 
     <title>无线点餐平台</title>
 
@@ -22,10 +21,10 @@
     <script type="text/javascript">
         // 参数： 当前页
         function gotoPage(page) {
-
+            var id = ${requestScope.typeId};
             // 先获取当前表单对象
             var frm = document.forms[0];
-            frm.action = "${pageContext.request.contextPath }/food?page=" + page;
+            frm.action = "${pageContext.request.contextPath }/foodType?page=" + page +"&id="+ id;
            // alert(frm.action);
             frm.submit();
 
@@ -114,6 +113,7 @@
                     <tr>
                         <td>
                             <input type="text" id="dish_name" name="foodName" class="select_value"/>
+                            <%--<input type="hidden" value="selectFood" name="method">--%>
                         </td>
                     </tr>
                     <tr>

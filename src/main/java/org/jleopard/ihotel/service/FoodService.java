@@ -8,6 +8,7 @@ import org.jleopard.mvc.core.annotation.Inject;
 import org.jleopard.mvc.core.annotation.Service;
 import org.jleopard.pageHelper.PageInfo;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Service
@@ -52,8 +53,8 @@ public class FoodService {
         return list == null ? null : list.get(0);
     }
 
-    public PageInfo getAll(int page, int pageSize) {
-        return dao.selectToPage(page, pageSize);
+    public PageInfo getAll(int page, int pageSize,String where, Serializable args) {
+        return dao.selectToPage(page, pageSize,where,args);
     }
 
 

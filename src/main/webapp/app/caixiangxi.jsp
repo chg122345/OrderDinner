@@ -1,4 +1,5 @@
 ﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<!-- 包含公共的JSP代码片段 -->
@@ -46,7 +47,7 @@
 				<ul>
 				<li class="dish_num"></li>
 					<li>
-						<a href="${pageContext.request.contextPath }/app/clientOrderList.jsp">
+						<a href="${pageContext.request.contextPath }/order">
 							<img src="${pageContext.request.contextPath }/app/detail/style/images/call2.gif" />
 						</a>
 					</li>
@@ -55,22 +56,13 @@
 
 			<div id="dish_2">
 				<ul>
-					
+
+					<c:forEach var="foodType" items="${sessionScope.listFoodType}">
 						<li>
-							<a href="${pageContext.request.contextPath }/app/caidan.jsp">粤菜</a>
+							<a href="${pageContext.request.contextPath }/foodType?page=1&id=${foodType.id}">${foodType.typeName }</a>
+							<input type="hidden" name="foodTypeId" value="${foodType.id}">
 						</li>
-					
-						<li>
-							<a href="${pageContext.request.contextPath }/app/chuancai.jsp">川菜</a>
-						</li>
-					
-						<li>
-							<a href="${pageContext.request.contextPath }/app/chuancai.jsp">湘菜</a>
-						</li>
-					
-						<li>
-							<a href="${pageContext.request.contextPath }/app/chuancai.jsp">东北菜</a>
-						</li>
+					</c:forEach>
 					
 				</ul>
 			</div>
@@ -81,7 +73,6 @@
 						<tr>
 							<td>
 								<input type="text" id="dish_name" name="foodName" class="select_value" /> 
-								<input type="hidden" value="selectFood" name="method">
 							</td>
 						</tr>
 						<tr>

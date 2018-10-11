@@ -60,12 +60,32 @@ public class IndexController {
             request.getSession().setAttribute("tableId",tableId);
         }
         List<FoodType> foodtypes =foodTypeService.query();
-        request.setAttribute("listFoodType", foodtypes);
-        PageInfo all = foodService.getAll(1, 6);
+        request.getSession().setAttribute("listFoodType", foodtypes);
+        PageInfo all = foodService.getAll(1, 6,null,null);
         request.setAttribute("pb", all);
         return PREFIX_PATH+"caidan";
     }
 
+    @RequestMapping("/food")
+    public String page(HttpServletRequest request,@RequestParam("page") Integer page){
+        PageInfo all = foodService.getAll(page, 6,null,null);
+        request.setAttribute("pb", all);
+        return PREFIX_PATH+"caidan";
+    }
+
+    @RequestMapping("/foodType")
+    public String foodType(HttpServletRequest request,@RequestParam("page") Integer page,@RequestParam("id") Integer id){
+        if (page != null){
+            PageInfo all = foodService.getAll(page, 6,"foodType.id=?",id);
+            request.setAttribute("pb", all);
+        }else {
+            PageInfo all = foodService.getAll(1, 6,"foodType.id=?",id);
+            request.setAttribute("pb", all);
+        }
+        request.setAttribute("typeId",id);
+        return PREFIX_PATH+"foodType";
+
+    }
     @RequestMapping("/caixiangxi")
     public String caixiangxi(HttpServletRequest request,@RequestParam("id") Integer id){
         Food food = foodService.findById(id);

@@ -20,7 +20,7 @@ public class ServiceTest {
         FoodType foodType = new FoodType();
         foodType.setId(2);
         Food food = new Food(3,"HHHFF",5.6,5.5,"","",foodType);
-        System.out.println(dao.getAll(2,3).getList());
+        System.out.println(dao.getAll(2,3,null,null).getList());
        /* FoodTypeDao dao1 = new FoodTypeDao();
         FoodType foodType = new FoodType();
         foodType.setTypeName("推荐");

@@ -18,6 +18,7 @@ import org.jleopard.pageHelper.PageInfo;
 import org.jleopard.session.SqlSession;
 import org.jleopard.session.sessionFactory.SqlSessionFactory;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Component
@@ -51,10 +52,10 @@ public class FoodDao extends BaseDao<Food> {
         return null;
     }
 
-    public PageInfo selectToPage(int page,int pageSize){
+    public PageInfo selectToPage(int page, int pageSize, String where, Serializable args){
         SqlSession session = sessionFactory.openSession();
         try {
-            PageInfo res = session.getJoinToPage(Food.class,new Class[]{FoodType.class},page,pageSize,"",null);
+            PageInfo res = session.getJoinToPage(Food.class,new Class[]{FoodType.class},page,pageSize,where,args);
             session.close();
             return res;
         } catch (SqlSessionException e) {
