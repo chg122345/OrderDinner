@@ -1,4 +1,5 @@
-﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
@@ -51,115 +52,20 @@
 		</thead>	
 		<!--显示数据列表 -->
         <tbody id="TableData">
+		<c:forEach items="${requestScope.foodList.list}" var="food">
 		
 			<tr class="TableDetail1">
-				<td>1&nbsp;</td>
-				<td>白灼虾&nbsp;</td>
-				<td>粤菜&nbsp;</td>
-				<td>36.0&nbsp;</td>
-                <td>23.0&nbsp;</td>
+				<td>${food.id}&nbsp;</td>
+				<td>${food.foodName}&nbsp;</td>
+				<td>${food.foodType_id.typeName}&nbsp;</td>
+				<td>${food.price}&nbsp;</td>
+                <td>${food.mprice}&nbsp;</td>
 				<td>
 					<a href="updateFood.jsp"  class="FunctionButton">更新</a>				
-					<a href="/sys/foodList.jsp?method=delete&id=1" onClick="return delConfirm();"class="FunctionButton">删除</a>				
+					<a href="#" lang="${food.id}" onClick="delFood(this);"class="FunctionButton">删除</a>
 				</td>
 			</tr>
-        
-			<tr class="TableDetail1">
-				<td>2&nbsp;</td>
-				<td>白切鸡&nbsp;</td>
-				<td>粤菜&nbsp;</td>
-				<td>68.0&nbsp;</td>
-                <td>50.0&nbsp;</td>
-				<td>
-					<a href="updateFood.jsp"  class="FunctionButton">更新</a>				
-					<a href="/sys/foodList.jsp?method=delete&id=2" onClick="return delConfirm();"class="FunctionButton">删除</a>				
-				</td>
-			</tr>
-        
-			<tr class="TableDetail1">
-				<td>3&nbsp;</td>
-				<td>烤乳猪&nbsp;</td>
-				<td>粤菜&nbsp;</td>
-				<td>68.0&nbsp;</td>
-                <td>50.0&nbsp;</td>
-				<td>
-					<a href="/sys/forward?method=foodSaveOrUpdateUI&id=3"  class="FunctionButton">更新</a>				
-					<a href="/sys/foodList.jsp?method=delete&id=3" onClick="return delConfirm();"class="FunctionButton">删除</a>				
-				</td>
-			</tr>
-        
-			<tr class="TableDetail1">
-				<td>4&nbsp;</td>
-				<td>烧鹅&nbsp;</td>
-				<td>粤菜&nbsp;</td>
-				<td>68.0&nbsp;</td>
-                <td>50.0&nbsp;</td>
-				<td>
-					<a href="/sys/forward?method=foodSaveOrUpdateUI&id=4"  class="FunctionButton">更新</a>				
-					<a href="/sys/foodList.jsp?method=delete&id=4" onClick="return delConfirm();"class="FunctionButton">删除</a>				
-				</td>
-			</tr>
-        
-			<tr class="TableDetail1">
-				<td>5&nbsp;</td>
-				<td>猪肉荷兰豆&nbsp;</td>
-				<td>粤菜&nbsp;</td>
-				<td>68.0&nbsp;</td>
-                <td>50.0&nbsp;</td>
-				<td>
-					<a href="/sys/forward?method=foodSaveOrUpdateUI&id=5"  class="FunctionButton">更新</a>				
-					<a href="/sys/foodList.jsp?method=delete&id=5" onClick="return delConfirm();"class="FunctionButton">删除</a>				
-				</td>
-			</tr>
-        
-			<tr class="TableDetail1">
-				<td>6&nbsp;</td>
-				<td>黄埔炒蛋&nbsp;</td>
-				<td>粤菜&nbsp;</td>
-				<td>68.0&nbsp;</td>
-                <td>50.0&nbsp;</td>
-				<td>
-					<a href="/sys/forward?method=foodSaveOrUpdateUI&id=6"  class="FunctionButton">更新</a>				
-					<a href="/sys/foodList.jsp?method=delete&id=6" onClick="return delConfirm();"class="FunctionButton">删除</a>				
-				</td>
-			</tr>
-        
-			<tr class="TableDetail1">
-				<td>7&nbsp;</td>
-				<td>狗肉煲&nbsp;</td>
-				<td>粤菜&nbsp;</td>
-				<td>68.0&nbsp;</td>
-                <td>50.0&nbsp;</td>
-				<td>
-					<a href="/sys/forward?method=foodSaveOrUpdateUI&id=7"  class="FunctionButton">更新</a>				
-					<a href="/sys/foodList.jsp?method=delete&id=7" onClick="return delConfirm();"class="FunctionButton">删除</a>				
-				</td>
-			</tr>
-        
-			<tr class="TableDetail1">
-				<td>8&nbsp;</td>
-				<td>鲫鱼汤&nbsp;</td>
-				<td>粤菜&nbsp;</td>
-				<td>23.0&nbsp;</td>
-                <td>29.0&nbsp;</td>
-				<td>
-					<a href="/sys/forward?method=foodSaveOrUpdateUI&id=8"  class="FunctionButton">更新</a>				
-					<a href="/sys/foodList.jsp?method=delete&id=8" onClick="return delConfirm();"class="FunctionButton">删除</a>				
-				</td>
-			</tr>
-        
-			<tr class="TableDetail1">
-				<td>9&nbsp;</td>
-				<td>酱猪蹄&nbsp;</td>
-				<td>川菜&nbsp;</td>
-				<td>23.0&nbsp;</td>
-                <td>18.0&nbsp;</td>
-				<td>
-					<a href="/sys/forward?method=foodSaveOrUpdateUI&id=9"  class="FunctionButton">更新</a>				
-					<a href="/sys/foodList.jsp?method=delete&id=9" onClick="return delConfirm();"class="FunctionButton">删除</a>				
-				</td>
-			</tr>
-        
+		</c:forEach>
         </tbody>
     </table>
 	
@@ -168,5 +74,20 @@
 		<div class="FunctionButton"><a href="saveFood.jsp">添加</a></div>
     </div> 
 </div>
+<script type="text/javascript">
+	function delFood(node) {
+		var id = node.lang;
+		if (window.confirm("您确定要删除一条记录码？")) {
+            $.ajax({
+                url:'${pageContext.request.contextPath}/admin/delFood',
+                data:{id:id},
+                success:function (res) {
+                    alert(res);
+                    window.location.reload();
+                }
+            });
+		}
+    }
+</script>
 </body>
 </html>
