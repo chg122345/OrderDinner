@@ -38,7 +38,7 @@
 <!-- 主内容区域（数据列表或表单显示） -->
 <div id="MainArea">
 	<!-- 表单内容 -->
-	<form action="# method="post">
+	<form action="#" method="post">
 		<!-- 本段标题（分段标题） -->
 		<div class="ItemBlock_Title">
         	<img width="4" height="7" border="0" src="${pageContext.request.contextPath }/sys/style/images/item_point.gif"> 新桌信息&nbsp;
@@ -49,8 +49,12 @@
 				<div class="ItemBlock2">
 					<table cellpadding="0" cellspacing="0" class="mainForm">
 						<tr>
+							<td width="80px">新桌ID</td>
+							<td><input type="text" name="id" class="InputStyle"/>*</td>
+						</tr>
+						<tr>
 							<td width="80px">新桌名字</td>
-							<td><input type="text" name="bName" class="InputStyle"/>*</td>
+							<td><input type="text" name="tableName" class="InputStyle"/>*</td>
 						</tr>
 					</table>
 				</div>

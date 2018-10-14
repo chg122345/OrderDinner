@@ -57,8 +57,8 @@
 									<td>${foodType.id }</td>
 									<td>${foodType.typeName }</td>
 									<td>
-										<a href="${pageContext.request.contextPath }/foodType?id=${foodType.id}&method=viewUpdate" class="FunctionButton">更新</a> 
-										<a href="${pageContext.request.contextPath }/foodType?id=${foodType.id}&method=delete" class="FunctionButton">删除</a>
+										<a href="${pageContext.request.contextPath }/admin/updateFoodType?id=${foodType.id}" class="FunctionButton">更新</a>
+										<a href="#" lang="${foodType.id}" onclick="delFoodType(this)" class="FunctionButton">删除</a>
 									</td>
 								</tr>
 							</c:forEach>
@@ -80,5 +80,20 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+        function delFoodType(node) {
+            var id = node.lang;
+            if (window.confirm("您确定要删除一条记录码？")) {
+                $.ajax({
+                    url:'${pageContext.request.contextPath}/admin/delFoodType',
+                    data:{id:id},
+                    success:function (res) {
+                        alert(res);
+                        window.location.reload();
+                    }
+                });
+            }
+        }
+	</script>
 </body>
 </html>

@@ -2,6 +2,7 @@ package org.jleopard.ihotel.service;
 
 import org.jleopard.ihotel.dao.OrderDetialDao;
 import org.jleopard.ihotel.entity.OrderDetail;
+import org.jleopard.ihotel.entity.Orders;
 import org.jleopard.mvc.core.annotation.Inject;
 import org.jleopard.mvc.core.annotation.Service;
 
@@ -24,9 +25,7 @@ public class OrderDetailService {
 	}
 
 	public List<OrderDetail> findByOrderid(Integer id) {
-		OrderDetail var1 = new OrderDetail();
-		var1.setId(id);
-		return dao.select(var1);
+		return dao.select("orderid = ?",id);
 	}
 
 }

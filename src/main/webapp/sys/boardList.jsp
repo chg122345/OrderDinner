@@ -1,4 +1,5 @@
-﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
 <html>
 <head>
@@ -52,58 +53,59 @@
 		</thead>	
 		<!--显示数据列表 -->
         <tbody id="TableData">
-		
+		<c:forEach items="${requestScope.tables}" var="table">
 			<tr class="TableDetail1">
-				<td align="center">1&nbsp;</td>
-				<td align="center"> 纽约&nbsp;</td>
-				<td align="center">预定</td>
-				<td align="center">2014-12-08 23:31:12</td>
-				<td>
-					<a href="/sys/boardList.jsp?method=update&id=1&isBook=0" class="FunctionButton">退桌</a>				
-					<a href="/sys/boardList.jsp?method=delete&id=1" onClick="return delConfirm();"class="FunctionButton">删除</a>				
-				</td>
+				<td align="center">${table.id}&nbsp;</td>
+				<td align="center">${table.tableName}&nbsp;</td>
+				<c:if test="${table.tableStatus == 1}">
+					<td align="center">预定</td>
+					<td align="center">${table.orderDate}</td>
+					<td><a href="#" lang="${table.id}" onClick="changeTable(this);" class="FunctionButton">退桌</a></td>
+				</c:if>
+				<c:if test="${table.tableStatus == 0}">
+					<td align="center">未预定</td>
+					<td align="center"></td>
+					<td>
+						<a href="#" lang="${table.id}" onClick="delTable(this);" class="FunctionButton">删除</a>
+					</td>
+				</c:if>
 			</tr>
-        
-			<tr class="TableDetail1">
-				<td align="center">2&nbsp;</td>
-				<td align="center"> 巴黎&nbsp;</td>
-				<td align="center">空闲</td>
-				<td align="center"></td>
-				<td>
-					<a href="/sys/boardList.jsp?method=update&id=2&isBook=1" class="FunctionButton">预定</a>				
-					<a href="/sys/boardList.jsp?method=delete&id=2" onClick="return delConfirm();"class="FunctionButton">删除</a>				
-				</td>
-			</tr>
-        
-			<tr class="TableDetail1">
-				<td align="center">3&nbsp;</td>
-				<td align="center"> 丹麦&nbsp;</td>
-				<td align="center">空闲</td>
-				<td align="center"></td>
-				<td>
-					<a href="/sys/boardList.jsp?method=update&id=3&isBook=1" class="FunctionButton">预定</a>				
-					<a href="/sys/boardList.jsp?method=delete&id=3" onClick="return delConfirm();"class="FunctionButton">删除</a>				
-				</td>
-			</tr>
-        
-			<tr class="TableDetail1">
-				<td align="center">5&nbsp;</td>
-				<td align="center"> 伦敦&nbsp;</td>
-				<td align="center">空闲</td>
-				<td align="center"></td>
-				<td>
-					<a href="/sys/boardList.jsp?method=update&id=5&isBook=1" class="FunctionButton">预定</a>				
-					<a href="/sys/boardList.jsp?method=delete&id=5" onClick="return delConfirm();"class="FunctionButton">删除</a>				
-				</td>
-			</tr>
-        
+		</c:forEach>
         </tbody>
     </table>
 	
    <!-- 其他功能超链接 -->
 	<div id="TableTail" align="center">
-		<div class="FunctionButton"><a href="saveBoard.jsp">添加</a></div>
+		<div class="FunctionButton"><a href="${pageContext.request.contextPath}/admin/addTable">添加</a></div>
     </div> 
 </div>
+<script type="text/javascript">
+    function delTable(node) {
+        var id = node.lang;
+        if (window.confirm("您确定要删除一条记录码？")) {
+            $.ajax({
+                url:'${pageContext.request.contextPath}/admin/delTable',
+                data:{id:id},
+                success:function (res) {
+                    alert(res);
+                    window.location.reload();
+                }
+            });
+        }
+    }
+    function changeTable(node) {
+        var id = node.lang;
+        if (window.confirm("您确定要退桌吗？")) {
+            $.ajax({
+                url:'${pageContext.request.contextPath}/admin/changeTable',
+                data:{id:id},
+                success:function (res) {
+                    alert(res);
+                    window.location.reload();
+                }
+            });
+        }
+    }
+</script>
 </body>
 </html>

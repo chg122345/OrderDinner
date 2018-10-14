@@ -16,18 +16,18 @@ public class DinnerTableService {
    @Inject
     private DinnerTableDao dao ;
 
-    public void add(DinnerTable dt) {
-        dao.insert(dt);
+    public int add(DinnerTable dt) {
+       return dao.insert(dt);
 
     }
 
-    public void delete(Integer id) {
-        dao.deleteById(id);
+    public int delete(Integer id) {
+        return dao.deleteById(id);
 
     }
 
-    public void update(DinnerTable dt) {
-        dao.update(dt);
+    public int update(DinnerTable dt) {
+        return dao.update(dt);
 
     }
 

@@ -18,16 +18,18 @@ import org.jleopard.pageHelper.PageInfo;
 import org.jleopard.session.SqlSession;
 import org.jleopard.session.sessionFactory.SqlSessionFactory;
 
+import java.io.Serializable;
+
 @Component
 public class OrdersDao extends BaseDao<Orders> {
 
     @Inject
     private SqlSessionFactory sessionFactory;
 
-    public PageInfo selectToPage(int page, int pageSize){
+    public PageInfo selectToPage(int page, int pageSize, String where, Serializable args){
         SqlSession session = sessionFactory.openSession();
         try {
-            PageInfo res = session.getJoinToPage(Orders.class,new Class[]{DinnerTable.class},page,pageSize,"where 1 = 1","");
+            PageInfo res = session.getJoinToPage(Orders.class,new Class[]{DinnerTable.class},page,pageSize,where,args);
             session.close();
             return res;
         } catch (SqlSessionException e) {
