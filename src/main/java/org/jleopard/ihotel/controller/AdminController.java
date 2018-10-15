@@ -10,9 +10,11 @@
 package org.jleopard.ihotel.controller;
 
 import org.jleopard.ihotel.entity.*;
+import org.jleopard.ihotel.filter.UserInter;
 import org.jleopard.ihotel.service.*;
 import org.jleopard.mvc.core.annotation.*;
 import org.jleopard.mvc.core.ienum.Method;
+import org.jleopard.mvc.inter.Before;
 import org.jleopard.mvc.upload.MultipartFile;
 import org.jleopard.pageHelper.PageInfo;
 import org.jleopard.util.FileUtil;
@@ -24,6 +26,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@Before(UserInter.class)
 @RequestMapping("/admin")
 public class AdminController {
 

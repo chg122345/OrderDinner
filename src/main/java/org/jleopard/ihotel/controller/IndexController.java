@@ -10,7 +10,7 @@
 package org.jleopard.ihotel.controller;
 
 import org.jleopard.ihotel.entity.*;
-import org.jleopard.ihotel.filter.TInter;
+import org.jleopard.ihotel.filter.UserInter;
 import org.jleopard.ihotel.service.*;
 import org.jleopard.mvc.core.annotation.*;
 import org.jleopard.mvc.core.ienum.Method;
@@ -210,7 +210,7 @@ public class IndexController {
         return "success";
     }
     @RequestMapping(value = "/upload",method = Method.ALL)
-    @Before(TInter.class)
+    @Before(UserInter.class)
     public String upload(){
         return "upload";
     }

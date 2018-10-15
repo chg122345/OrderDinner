@@ -9,7 +9,7 @@
 
 package org.jleopard.ihotel.controller;
 
-import org.jleopard.ihotel.filter.TInter;
+import org.jleopard.ihotel.filter.UserInter;
 import org.jleopard.mvc.core.annotation.*;
 import org.jleopard.mvc.core.ienum.Method;
 import org.jleopard.ihotel.entity.DinnerTable;
@@ -20,7 +20,7 @@ import org.jleopard.mvc.inter.Clear;
 import java.util.List;
 
 @Controller
-@Before(TInter.class)
+@Before(UserInter.class)
 public class TableController {
 
     @Inject
@@ -28,7 +28,7 @@ public class TableController {
 
     @RequestMapping("/table")
     @RenderJson
-    @Clear(TInter.class)
+    @Clear(UserInter.class)
     public List<DinnerTable> list(@RequestParam("name") String name, @RequestParam("pass") String pass){
         System.out.println(name+pass);
         return service.query();
@@ -36,7 +36,7 @@ public class TableController {
 
     @RequestMapping(value = "/tt",method = Method.GET)
     @RenderJson
-    @Clear(TInter.class)
+    @Clear(UserInter.class)
     public Integer list1(@RequestParam("name") String name, @RequestParam("pass") Integer pass){
         System.out.println(name+pass);
         return pass;
