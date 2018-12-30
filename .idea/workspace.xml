@@ -7,16 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="463ec7e5-cda6-466c-9d46-df3def69cbfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/TableController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/TableController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/filter/TInter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/filter/UserInter.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,99 +33,13 @@
     <expand />
     <select />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1359707219">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="20" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="2" />
-          <entry key="project.open.time.2" value="5" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.42" value="1" />
-          <entry key="project.open.time.45" value="1" />
-          <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.47" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.53" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="21" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="88" />
-          <entry key="css" value="6" />
-          <entry key="gif" value="4" />
-          <entry key="html" value="4" />
-          <entry key="http" value="1" />
-          <entry key="java" value="495" />
-          <entry key="js" value="6" />
-          <entry key="json" value="3" />
-          <entry key="jsp" value="104" />
-          <entry key="md" value="6" />
-          <entry key="png" value="28" />
-          <entry key="pom" value="1" />
-          <entry key="properties" value="1" />
-          <entry key="ts" value="2" />
-          <entry key="xml" value="28" />
-          <entry key="xsd" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="88" />
-          <entry key="CSS" value="6" />
-          <entry key="HTML" value="4" />
-          <entry key="HTTP Request" value="1" />
-          <entry key="Image" value="32" />
-          <entry key="JAVA" value="495" />
-          <entry key="JSON" value="3" />
-          <entry key="JSP" value="104" />
-          <entry key="JavaScript" value="6" />
-          <entry key="Markdown" value="6" />
-          <entry key="Properties" value="1" />
-          <entry key="TypeScript" value="2" />
-          <entry key="XML" value="30" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="class" value="4" />
-          <entry key="dummy" value="73" />
-          <entry key="java" value="11956" />
-          <entry key="jsp" value="2613" />
-          <entry key="md" value="1257" />
-          <entry key="txt" value="49" />
-          <entry key="xml" value="128" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CLASS" value="4" />
-          <entry key="JAVA" value="11956" />
-          <entry key="JSP" value="2613" />
-          <entry key="Markdown" value="1257" />
-          <entry key="PLAIN_TEXT" value="122" />
-          <entry key="XML" value="128" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="54" column="36" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="299">
+              <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -141,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+            <state relative-caret-position="374">
+              <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,9 +80,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response3.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -234,12 +137,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -303,6 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -333,38 +231,6 @@
               <item name="IHotel" type="b2602c69:ProjectViewProjectNode" />
               <item name="IHotel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ihotel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ihotel" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IHotel" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -386,7 +252,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -692,7 +557,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="index.jsp" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:8088/sys/index.jsp">
+    <configuration name="index.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8088/sys/index.jsp">
       <method v="2" />
     </configuration>
     <configuration name="hotel" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.10" ALTERNATIVE_JRE_ENABLED="false">
@@ -708,11 +573,11 @@
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_IHotel" />
         <option name="HTTP_PORT" value="8088" />
       </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="40841" />
       </RunnerSettings>
@@ -768,11 +633,11 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.hotel" />
-      <item itemvalue="JavaScript Debug.index.jsp" />
       <item itemvalue="Application.FoodDaoTest" />
       <item itemvalue="Application.ServiceTest" />
       <item itemvalue="Application.ClassPathTest" />
+      <item itemvalue="JavaScript Debug.index.jsp" />
+      <item itemvalue="Tomcat Server.hotel" />
     </list>
     <recent_temporary>
       <list>
@@ -813,38 +678,40 @@
       <workItem from="1539219256057" duration="8290000" />
       <workItem from="1539436930765" duration="2843000" />
       <workItem from="1539483040077" duration="11897000" />
-      <workItem from="1539566657647" duration="5669000" />
+      <workItem from="1539566657647" duration="5892000" />
+      <workItem from="1546139005230" duration="198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160983000" />
+    <option name="totallyTimeSpent" value="161404000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="26" width="1863" height="1054" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6400778" visible="true" weight="0.3148046" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6400778" visible="true" weight="0.31865713" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" sideWeight="0.35992217" side_tool="true" weight="0.3458702" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49917448" visible="true" weight="0.45689654" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49917448" weight="0.45640475" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49972484" weight="0.39978448" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49972484" weight="0.3265086" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49972484" weight="0.3254565" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008255" side_tool="true" weight="0.45689654" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3286638" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32831" />
       <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32903227" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="REST Client" order="14" sideWeight="0.49972484" weight="0.33512932" />
+      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -857,9 +724,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -892,21 +756,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sys/public/top.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/sys/public/bottom.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-755" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/app/caidan.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="103" column="99" lean-forward="true" selection-start-line="103" selection-start-column="99" selection-end-line="103" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/app/chuancai.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-34">
@@ -1264,23 +1113,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/.idea/httpRequests/2018-10-15T100223.200.json" />
+    <entry file="file://$PROJECT_DIR$/.idea/httpRequests/2018-10-15T100428.200.json" />
+    <entry file="file://$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="39" column="9" lean-forward="true" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="299">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jleopard/ihotel/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="54" column="36" lean-forward="true" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+        <state relative-caret-position="374">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
